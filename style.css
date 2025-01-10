@@ -1,5 +1,5 @@
 /* Tambahkan media query untuk perangkat */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
     /* Navigasi di perangkat kecil, menyembunyikan menu utama */
     nav ul {
         display: none;
