@@ -1,0 +1,421 @@
+/* Tambahkan media query untuk perangkat */
+@media only screen and (max-width: 768px) {
+    /* Navigasi di perangkat kecil, menyembunyikan menu utama */
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+     /* Menampilkan menu jika aktif */
+    nav ul.active {
+        display: flex;
+    }
+     /* Mengatur tinggi hero section di perangkat kecil */
+    .hero {
+        height: auto;
+    }
+     /* Mengatur tata letak kolom menjadi baris vertikal */
+    .main, .box {
+        flex-direction: column;
+    }
+    /* Menyesuaikan ukuran font heading */
+    .content h1 {
+        font-size: 50px;
+    }
+}
+/* Reset default browser */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+/* Bagian hero untuk gambar latar dan teks utama */
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(img/background.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* Navigasi */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 8% 0 8%;
+}
+.logo {
+    color: #fafafa;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+span {
+    color: #20b2aa;
+}
+/* Gaya daftar menu navigasi */
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #20b2aa;
+    transition: .4s;
+}
+/* Tombol navigasi */
+.btn {
+    background: #20b2aa;
+    color:#fafafa;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+/* Konten utama pada hero section */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h1{
+    color:#fff;
+    font-size: 75px;
+    margin: 10px 0px 10px;
+    
+}
+h3{
+    color:#fff;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+h4{
+    color: #20b2aa;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.news form {width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+.news form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #20b2aa;
+    outline: none;
+    border-radius: 30px;
+}
+.news form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: #20b2aa;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    top: 6px;
+    right: 6px;
+}
+/* Tentang Kami */
+.about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+}
+
+.about img{
+    height: auto;
+    width: 430px;
+}
+.about-text {
+    width: 550px;
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h2{
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 75px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.about-text h5{
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.about-text p {
+    color: #fcfcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+    text-align: justify;
+}
+button{
+    background-color: #20b2aa;
+    color: #fff;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid #20b2aa;
+    cursor: pointer ;
+}
+/* Layanan dan kartu informasi */
+.service {
+    background: #101010;
+    width: 100%;
+    padding: 100px 0;
+    align-items: center;
+}
+h2{
+    color: #fff;
+    font-size: 50px;
+   
+}
+.title h2{
+    color: #fff;
+    font-size: 75px;
+    width: 1130px;
+    text-align: center;
+    margin: auto;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 365px;
+    width: 335;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    text-align: center;
+}
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0;
+    color: #20b2aa;
+}
+h5 {
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.pra p{
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.card .button {
+    background-color: #20b2aa;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+}
+.card .button:hover {
+    background-color: transparent;
+    border: 2px solid #20b2aa;
+    cursor: pointer;
+}
+/* Kontak */
+.kontak-saya {
+    width: 100%;
+    background: #191919;
+    height: 722px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 0 px;
+}
+.kontak-saya p{
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 25px;
+
+
+}
+.kontak-saya .button-dua {
+    background-color: #20b2aa;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input {
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.msg {
+    width: 20%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+.send{
+    padding: 20px;
+    width: 10px;
+    margin: 20px;
+    border: none;
+    outline: none;
+}
+.send:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px #20b2aa;
+}
+.kontak-saya .button-dua:hover{
+    background-color: transparent;
+    border: 2px solid #20b2aa;
+    cursor: pointer;
+}
+/* Footer */
+footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p:nth-child(1){
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+footer p:nth-child(2){
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+    width: 500px;
+    line-height: 26px;
+}
+.sosial {
+    display: flex;
+}
+.sosial a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #20b2aa;
+    border-radius: 50px;
+    margin: 22px 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.sosial a:hover{
+    transform:scale(1.5);
+    transition: .3s;
+}
+.end{
+    position: absolute;
+    color: #20b2aa;
+    bottom: 35px;
+}
+/* Media query untuk perangkat hingga 922px */
+@media only screen and (max-width: 922px) {
+.hero{
+    height: 922px;
+    }
+.content {
+    top: initial;
+    transform: translateY(0);
+}
+h1, h2, h3, h4, h5 {
+    font-size: calc(1em - 0.1vw);
+}
+.news form {
+    width: 100%;
+}
+.about, .service, .kontak-saya {
+    padding: 50px 0;
+    margin: 10px 5px;
+}
+.main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.about-text{
+    width: 100%;
+}
+.card {
+    margin: 10px;
+}
+.kontak-saya p {
+    font-size: 35px;
+}
+.sosial a {
+    margin: 10px 5px;
+    }
+}
